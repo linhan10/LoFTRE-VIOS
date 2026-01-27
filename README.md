@@ -12,3 +12,9 @@ Ceres Solver 2.1.0
 OpenCV 4.2.0
 ## 2.4 ONNXRUNTIME
 onnxruntime-aarch64-gpu-1.16.0
+# 3. Run the project
+## 3.1 
+```
+cd ~/loftrvins_ws/src
+git clone https://github.com
+```
