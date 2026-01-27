@@ -1,0 +1,7 @@
+<launch>
+    <node name="rvizvisualisation"
+          pkg="rviz" 
+          type="rviz" 
+          output="screen" 
+          args="-d $(find loftr_vins)/../config/loftr_vins_rviz_config.rviz" />
+</launch>
