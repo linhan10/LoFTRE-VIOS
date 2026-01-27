@@ -42,6 +42,9 @@ rosrun loftr_vins loftr_vins_node ~/loftrvins_ws/src/LoFTR_VINS/config/zed2/zed2
 # 4. Dataset 
 EuRoC MAV Dataset
 https://projects.asl.ethz.ch/datasets/euroc-mav/
+# 5. Result
+<img width="472" height="430" alt="image" src="https://github.com/user-attachments/assets/4914c045-3bb6-429f-9c18-7d06a31d3ec6" />
+Trajectory compare with LoFTRE_VIOS, SuperVINS, and VINS-Fusion in EuRoC dataset MH05
 # Thanks
-https://github.com/luohongk/SuperVINS https://github.com/HKUST-Aerial-Robotics/VINS-Mono
+https://github.com/luohongk/SuperVINS https://github.com/HKUST-Aerial-Robotics/VINS-Mono https://github.com/zju3dv/LoFTR
 
