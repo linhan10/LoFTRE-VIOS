@@ -59,5 +59,5 @@ Trajectory compare with LoFTRE_VIOS, SuperVINS, and VINS-Fusion in EuRoC dataset
 
 
 # Thanks
-* [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)，[SuperVINS](https://github.com/luohongk/SuperVINS)[LoFTR](https://github.com/zju3dv/LoFTR)
+* [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)，[SuperVINS](https://github.com/luohongk/SuperVINS)，[LoFTR](https://github.com/zju3dv/LoFTR)
 
