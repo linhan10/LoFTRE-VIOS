@@ -1,7 +1,8 @@
 # LoFTRE-VIOS
 ## LoFTRE-VIOS: Local Feature Transformer-Enhanced Visual-Inertial Odometry System for Feature Tracking and Real-Time Localization of UAV in Indistinctive Environments
 
-<img width="1365" height="727" alt="image" src="https://github.com/user-attachments/assets/ea998e1b-52d2-4b38-b099-1475c8ffd7cb" />
+<img width="1387" height="732" alt="image" src="https://github.com/user-attachments/assets/2e9ca04f-a7dd-4ee4-a347-3893e14d6406" />
+
 
 
 # 1. Introduction
