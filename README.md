@@ -16,5 +16,8 @@ onnxruntime-aarch64-gpu-1.16.0
 ## 3.1 
 ```
 cd ~/loftrvins_ws/src
-git clone https://github.com
+git clone https://github.com/linhan10/LoFTRE-VIOS.git
+cd ../
+catkin_make
+source ~/loftrvins_ws/devel/setup.bash
 ```
