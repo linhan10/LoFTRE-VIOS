@@ -1,7 +1,8 @@
 # LoFTRE-VIOS
 ## LoFTRE-VIOS: Local Feature Transformer-Enhanced Visual-Inertial Odometry System for Feature Tracking and Real-Time Localization of UAV in Indistinctive Environments
 
-<img width="2880" height="1472" alt="Gemini_Generated_Image_hjqd9rhjqd9rhjqd" src="https://github.com/user-attachments/assets/998da437-2d8d-4046-a242-cd8f9d2ec0ff" />
+<img width="1365" height="727" alt="image" src="https://github.com/user-attachments/assets/ea998e1b-52d2-4b38-b099-1475c8ffd7cb" />
+
 
 # 1. Introduction
 This code is run on Nvidia Orin AGX, so the download file is for arm64 system. X86 system need to modify by yourselves.
