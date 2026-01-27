@@ -6,3 +6,9 @@ This code is run on Nvidia Orin AGX, so the download file is for arm64 system. X
 # 2. Project
 ## 2.1 Ubuntu
 Ubuntu 20.04. ROS Noetic. JetPack 5.1.2
+## 2.2 Ceres Solver
+Ceres Solver 2.1.0
+## 2.3 OpenCV
+OpenCV 4.2.0
+## 2.4 ONNXRUNTIME
+onnxruntime-aarch64-gpu-1.16.0
