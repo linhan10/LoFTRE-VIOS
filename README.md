@@ -42,3 +42,6 @@ rosrun loftr_vins loftr_vins_node ~/loftrvins_ws/src/LoFTR_VINS/config/zed2/zed2
 # 4. Dataset 
 EuRoC MAV Dataset
 https://projects.asl.ethz.ch/datasets/euroc-mav/
+# Thanks
+https://github.com/luohongk/SuperVINS https://github.com/HKUST-Aerial-Robotics/VINS-Mono
+
