@@ -39,3 +39,6 @@ roslaunch loftr_vins loftr_vins_rviz.launch
 roslaunch zed_wrapper zed2.launch
 rosrun loftr_vins loftr_vins_node ~/loftrvins_ws/src/LoFTR_VINS/config/zed2/zed2_stereo_imu_config.yaml
 ```
+# 4. Dataset 
+EuRoC MAV Dataset
+https://projects.asl.ethz.ch/datasets/euroc-mav/
