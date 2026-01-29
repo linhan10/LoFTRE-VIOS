@@ -39,7 +39,7 @@ private:
     std::unique_ptr<LoFTR_Interface> loftr_interface_;
     LoFTR_Interface::Config loftr_config_;
 
-    bool csv_logging_enabled_;
+    
     std::string csv_output_dir_;
     std::ofstream csv_performance_log_;
     std::ofstream csv_feature_log_;
@@ -104,9 +104,6 @@ private:
                    map<int, cv::Point2f> &prevLeftPtsMap);
 
     // CSV 相關
-    void initializeCSVLogging();
-    void logPerformanceMetrics();
-    void finalizeCSVLogging();
     void resetCurrentMetrics();
     
 public:
