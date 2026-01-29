@@ -15,9 +15,7 @@ FeatureTrackerLoFTR::FeatureTrackerLoFTR() : FeatureTracker()
     
     // 初始化 CSV 日誌 - 根據參數決定是否啟用
     csv_logging_enabled_ = LOFTR_SHOW_PERFORMANCE_STATS;
-    if (csv_logging_enabled_) {
-        initializeCSVLogging();
-    }
+
     
     // 初始化性能指標
     resetCurrentMetrics();
@@ -916,48 +914,6 @@ void FeatureTrackerLoFTR::loadConfiguration()
 // CSV 日誌相關函數實現
 // ==========================================
 
-void FeatureTrackerLoFTR::initializeCSVLogging()
-{
-    // 創建輸出目錄
-    csv_output_dir_ = "/home/lin/loftrvins_ws/output_data/loftr_debug_logs/";
-    std::string mkdir_cmd = "mkdir -p " + csv_output_dir_;
-    int ret = system(mkdir_cmd.c_str());
-    (void)ret; // 消除編譯警告
-    
-    // 生成帶時間戳的文件名
-    auto now = std::chrono::system_clock::now();
-    auto time_t = std::chrono::system_clock::to_time_t(now);
-    std::stringstream ss;
-    ss << std::put_time(std::localtime(&time_t), "%Y%m%d_%H%M%S");
-    std::string timestamp = ss.str();
-    
-    // 初始化單一整合日誌文件
-    std::string combined_filename = csv_output_dir_ + "track_analysis_" + timestamp + ".csv";
-    csv_performance_log_.open(combined_filename);
-    
-    if (csv_performance_log_.is_open()) {
-        csv_performance_log_ << "frame,timestamp,"
-                            // --- 時序數據 (Temporal) ---
-                            << "prev_features,"         // 上一幀特徵數
-                            << "tracked_features,"      // 追蹤後特徵數
-                            << "temp_match_rate,"       // [新增] 時序匹配率 (Tracked / Prev)
-                            << "loftr_added_temp,"      // LoFTR時序補充數
-                            // --- 立體數據 (Stereo) ---
-                            << "current_features,"      // 當前總特徵數 (分母)
-                            << "stereo_matches,"        // 立體匹配數 (分子)
-                            << "stereo_match_rate,"     // [新增] 立體匹配率 (Stereo / Current)
-                            << "stereo_flow_matches,"   // 光流貢獻
-                            << "stereo_loftr_added,"    // LoFTR貢獻
-                            // --- 耗時 ---
-                            << "time_flow_temp,"
-                            << "time_loftr_temp,"
-                            << "time_flow_stereo,"
-                            << "time_loftr_stereo,"
-                            << "total_time_ms\n";
-                            
-        ROS_INFO("[LoFTR] Combined analysis CSV log initialized");
-    }
-}
 
 void FeatureTrackerLoFTR::logPerformanceMetrics()
 {
